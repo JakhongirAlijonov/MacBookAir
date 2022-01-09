@@ -1,33 +1,139 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
 /* GLOBAL */
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    background-color: #de3322;
+    background-image: linear-gradient(62deg, #de3322 0%, #F7CE68 100%);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #fff;
 }
+
 
 /* CONTAINER */
+
 .container {
-  max-width: 1260px;
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 1000px;
+    width: 100%;
+    padding: 25px 45px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #00000080;
+    border-radius: 24px;
 }
 
+
 /* MAIN CONTENT */
-.main-content {
-  flex-grow: 1;
+
+
+/* .main-content {
+    flex-grow: 1;
+} */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-nav-item {
+    list-style: none;
+    margin-left: 16px;
+}
+
+.header-nav-item a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    transition: 300ms ease-in;
+}
+
+.header-nav-item a:hover {
+    text-decoration: underline;
+}
+
+.buy {
+    padding: 4px 16px;
+    border-radius: 24px;
+    background-color: rgb(27, 125, 218);
+}
+
+.mac {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mac-texts {}
+
+.sub-title {
+    margin: 0;
+    font-weight: 500;
+    margin-top: 84px;
+}
+
+.title {
+    text-shadow: 0 0 2px #FFFBFB;
+    font-size: 36px;
+    margin-top: 4px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 8px;
+}
+
+.mac-des {
+    width: 272px;
+    line-height: 14px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.cost {
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+
+.chip {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    padding-left: 0;
+    text-shadow: 0 0 2px #FFFBFB;
+}
+
+.mac-img {
+    margin-right: -45px;
 }
